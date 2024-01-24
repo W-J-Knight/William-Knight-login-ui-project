@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --primary-1: #212121;
+    --primary-2: #3A4042;
+    --secondary-1: #50717B;
+    --secondary-2: #8ECCCC;
+    --primary-text: #CCC;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +15,7 @@
 
 html {
     font-size: 10px;
+    color: var(--primary-text);
 }
 
 body {
@@ -20,18 +28,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--primary-1);
 }
 
 form {
     border: 1px solid black;
     border-radius: 0.5rem;
-    box-shadow: 0px 10px 20px -2px #0567d8;
+    box-shadow: 0px 10px 15px 5px var(--secondary-2);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-width: 40rem;
     height: 45rem;
+    background-color: var(--primary-2);
 }
 
 form h2 {
@@ -47,8 +57,13 @@ form h2 {
 }
 
 input{
+    width: 90%;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
+    background-color: inherit;
+    color: #CCC;
+    line-height: 2.8rem;
+    caret-color: var(--secondary-2);
  }
 
 input:focus {
@@ -57,8 +72,8 @@ input:focus {
 
 form button{
     width: 15rem;
-    background-color: #0567d8;
-    color: white;
+    background-color: var(--secondary-2);
+    color: var(--primary-1);
     font-size: 2rem;
     text-align: center;
     padding: 0.2em 0;
